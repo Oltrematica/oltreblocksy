@@ -504,8 +504,6 @@ class Customizer extends Base_Module {
      * Enqueue customizer scripts
      */
     public function enqueue_customizer_scripts() {
-        // Scripts disabled until files are created
-        /*
         wp_enqueue_script(
             'oltreblocksy-customizer',
             OLTREBLOCKSY_ASSETS_URI . '/js/customizer.js',
@@ -530,15 +528,12 @@ class Customizer extends Base_Module {
                 'success' => __('Settings saved successfully', 'oltreblocksy'),
             ),
         ));
-        */
     }
     
     /**
      * Enqueue preview scripts
      */
     public function enqueue_preview_scripts() {
-        // Scripts disabled until files are created
-        /*
         wp_enqueue_script(
             'oltreblocksy-customizer-preview',
             OLTREBLOCKSY_ASSETS_URI . '/js/customizer-preview.js',
@@ -555,7 +550,6 @@ class Customizer extends Base_Module {
                 'accent_color' => get_theme_mod('oltreblocksy_accent_color', '#f59e0b'),
             ),
         ));
-        */
     }
     
     /**

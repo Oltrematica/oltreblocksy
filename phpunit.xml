@@ -1,42 +1,1542 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
-         bootstrap="tests/bootstrap.php"
-         colors="true"
-         processIsolation="false"
-         stopOnFailure="false"
-         cacheDirectory=".phpunit.cache"
-         testdox="true">
-    <testsuites>
-        <testsuite name="Unit">
-            <directory>tests/Unit</directory>
-        </testsuite>
-        <testsuite name="Integration">
-            <directory>tests/Integration</directory>
-        </testsuite>
-        <testsuite name="Performance">
-            <directory>tests/Performance</directory>
-        </testsuite>
-    </testsuites>
-    <source>
-        <include>
-            <directory>oltreblocksy-theme/inc</directory>
-            <directory>oltreblocksy-theme</directory>
-        </include>
-        <exclude>
-            <directory>oltreblocksy-theme/assets</directory>
-            <directory>tests</directory>
-            <directory>vendor</directory>
-        </exclude>
-    </source>
-    <coverage>
-        <report>
-            <html outputDirectory="coverage-html"/>
-            <text outputFile="coverage.txt"/>
-            <clover outputFile="coverage.xml"/>
-        </report>
-    </coverage>
-    <logging>
-        <junit outputFile="phpunit.xml"/>
-    </logging>
-</phpunit>
+<testsuites>
+  <testsuite name="CLI Arguments" tests="169" assertions="0" errors="169" failures="0" skipped="0" time="0.000000">
+    <testsuite name="Tests\Unit\HelpersTest" file="tests/Unit/HelpersTest.php" tests="26" assertions="0" errors="26" failures="0" skipped="0" time="0.000000">
+      <testcase name="`Helper Functions` → it checks if plugin is active correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it checks if plugin is active correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it checks if plugin is active correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it checks network active plugins" file="tests/Unit/HelpersTest.php::`Helper Functions` → it checks network active plugins" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it checks network active pluginsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it returns SVG icons correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it returns SVG icons correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it returns SVG icons correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it returns empty string for non-existent icons" file="tests/Unit/HelpersTest.php::`Helper Functions` → it returns empty string for non-existent icons" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it returns empty string for non-existent iconsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it handles different icon sizes" file="tests/Unit/HelpersTest.php::`Helper Functions` → it handles different icon sizes" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it handles different icon sizesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it provides all expected icons" file="tests/Unit/HelpersTest.php::`Helper Functions` → it provides all expected icons" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it provides all expected iconsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it sanitizes HTML classes correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it sanitizes HTML classes correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it sanitizes HTML classes correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it calculates reading time correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it calculates reading time correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it calculates reading time correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it handles HTML in reading time calculation" file="tests/Unit/HelpersTest.php::`Helper Functions` → it handles HTML in reading time calculation" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it handles HTML in reading time calculationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it gets optimized image attributes" file="tests/Unit/HelpersTest.php::`Helper Functions` → it gets optimized image attributes" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it gets optimized image attributesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it returns empty array for non-existent image" file="tests/Unit/HelpersTest.php::`Helper Functions` → it returns empty array for non-existent image" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it returns empty array for non-existent imagePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it merges custom attributes correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it merges custom attributes correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it merges custom attributes correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it generates critical CSS" file="tests/Unit/HelpersTest.php::`Helper Functions` → it generates critical CSS" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it generates critical CSSPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it can be filtered" file="tests/Unit/HelpersTest.php::`Helper Functions` → it can be filtered" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it can be filteredPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it detects asset loading conditions correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it detects asset loading conditions correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it detects asset loading conditions correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it detects blog asset loading" file="tests/Unit/HelpersTest.php::`Helper Functions` → it detects blog asset loading" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it detects blog asset loadingPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it detects comments asset loading" file="tests/Unit/HelpersTest.php::`Helper Functions` → it detects comments asset loading" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it detects comments asset loadingPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it gets performance metrics" file="tests/Unit/HelpersTest.php::`Helper Functions` → it gets performance metrics" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it gets performance metricsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it can filter performance metrics" file="tests/Unit/HelpersTest.php::`Helper Functions` → it can filter performance metrics" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it can filter performance metricsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it logs performance data in debug mode" file="tests/Unit/HelpersTest.php::`Helper Functions` → it logs performance data in debug mode" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it logs performance data in debug modePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it provides correct breakpoint values" file="tests/Unit/HelpersTest.php::`Helper Functions` → it provides correct breakpoint values" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it provides correct breakpoint valuesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it detects reduced motion preference" file="tests/Unit/HelpersTest.php::`Helper Functions` → it detects reduced motion preference" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it detects reduced motion preferencePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it generates unique IDs" file="tests/Unit/HelpersTest.php::`Helper Functions` → it generates unique IDs" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it generates unique IDsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it minifies CSS correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it minifies CSS correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it minifies CSS correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it gets theme mod with fallback" file="tests/Unit/HelpersTest.php::`Helper Functions` → it gets theme mod with fallback" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it gets theme mod with fallbackPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Helper Functions` → it detects dark mode correctly" file="tests/Unit/HelpersTest.php::`Helper Functions` → it detects dark mode correctly" class="Tests\Unit\HelpersTest" classname="Tests.Unit.HelpersTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Helper Functions` → it detects dark mode correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Unit\Modules\AccessibilityTest" file="tests/Unit/Modules/AccessibilityTest.php" tests="23" assertions="0" errors="23" failures="0" skipped="0" time="0.000000">
+      <testcase name="`Accessibility Module` → it can be instantiated" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it can be instantiated" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it can be instantiatedPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it returns correct module name" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it returns correct module name" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it returns correct module namePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it enhances menu accessibility with ARIA attributes" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it enhances menu accessibility with ARIA attributes" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it enhances menu accessibility with ARIA attributesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it adds external link attributes for accessibility" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it adds external link attributes for accessibility" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it adds external link attributes for accessibilityPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it improves image accessibility with alt text" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it improves image accessibility with alt text" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it improves image accessibility with alt textPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it adds role presentation for decorative images" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it adds role presentation for decorative images" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it adds role presentation for decorative imagesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it adds aria-describedby for complex images" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it adds aria-describedby for complex images" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it adds aria-describedby for complex imagesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it adds content navigation for long articles" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it adds content navigation for long articles" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it adds content navigation for long articlesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it does not add navigation for short content" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it does not add navigation for short content" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it does not add navigation for short contentPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it enhances table accessibility" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it enhances table accessibility" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it enhances table accessibilityPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it enhances iframe accessibility with titles" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it enhances iframe accessibility with titles" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it enhances iframe accessibility with titlesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it handles different embed types correctly" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it handles different embed types correctly" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it handles different embed types correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it improves form accessibility" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it improves form accessibility" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it improves form accessibilityPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it runs accessibility audit" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it runs accessibility audit" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it runs accessibility auditPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it handles customizer registration" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it handles customizer registration" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it handles customizer registrationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it checks for heading level skipping" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it checks for heading level skipping" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it checks for heading level skippingPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it handles proper heading hierarchy" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it handles proper heading hierarchy" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it handles proper heading hierarchyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it provides keyboard navigation script" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it provides keyboard navigation script" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it provides keyboard navigation scriptPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it provides focus trap functionality" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it provides focus trap functionality" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it provides focus trap functionalityPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it provides announcement region" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it provides announcement region" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it provides announcement regionPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it adds reduced motion support" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it adds reduced motion support" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it adds reduced motion supportPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it adds high contrast mode support" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it adds high contrast mode support" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it adds high contrast mode supportPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Accessibility Module` → it provides proper focus management styles" file="tests/Unit/Modules/AccessibilityTest.php::`Accessibility Module` → it provides proper focus management styles" class="Tests\Unit\Modules\AccessibilityTest" classname="Tests.Unit.Modules.AccessibilityTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Accessibility Module` → it provides proper focus management stylesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Unit\Modules\BaseModuleTest" file="tests/Unit/Modules/BaseModuleTest.php" tests="17" assertions="0" errors="17" failures="0" skipped="0" time="0.000000">
+      <testcase name="`Base_Module` → it can be instantiated" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it can be instantiated" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it can be instantiatedPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it returns correct module name" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it returns correct module name" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it returns correct module namePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it has default enabled status" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it has default enabled status" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it has default enabled statusPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it can be enabled and disabled" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it can be enabled and disabled" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it can be enabled and disabledPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it checks plugin dependencies correctly" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it checks plugin dependencies correctly" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it checks plugin dependencies correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it checks function dependencies correctly" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it checks function dependencies correctly" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it checks function dependencies correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it checks class dependencies correctly" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it checks class dependencies correctly" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it checks class dependencies correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it passes dependency check with no dependencies" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it passes dependency check with no dependencies" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it passes dependency check with no dependenciesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it fails dependency check with unmet dependencies" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it fails dependency check with unmet dependencies" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it fails dependency check with unmet dependenciesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it can get and set individual settings" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it can get and set individual settings" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it can get and set individual settingsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it can save settings" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it can save settings" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it can save settingsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it can set individual setting" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it can set individual setting" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it can set individual settingPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it returns correct module info" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it returns correct module info" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it returns correct module infoPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it handles module activation" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it handles module activation" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it handles module activationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it handles module deactivation" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it handles module deactivation" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it handles module deactivationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it can handle customizer registration" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it can handle customizer registration" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it can handle customizer registrationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Base_Module` → it can handle ajax requests" file="tests/Unit/Modules/BaseModuleTest.php::`Base_Module` → it can handle ajax requests" class="Tests\Unit\Modules\BaseModuleTest" classname="Tests.Unit.Modules.BaseModuleTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Base_Module` → it can handle ajax requestsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Unit\Modules\ColorSystemTest" file="tests/Unit/Modules/ColorSystemTest.php" tests="22" assertions="0" errors="22" failures="0" skipped="0" time="0.000000">
+      <testcase name="`ColorSystem Module` → it can be instantiated" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it can be instantiated" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it can be instantiatedPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it returns correct module name" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it returns correct module name" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it returns correct module namePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it loads color palettes correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it loads color palettes correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it loads color palettes correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it loads harmony rules correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it loads harmony rules correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it loads harmony rules correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it gets current palette correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it gets current palette correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it gets current palette correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it converts hex to HSL correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it converts hex to HSL correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it converts hex to HSL correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it handles short hex colors" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it handles short hex colors" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it handles short hex colorsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it converts HSL to hex correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it converts HSL to hex correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it converts HSL to hex correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it calculates relative luminance correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it calculates relative luminance correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it calculates relative luminance correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it calculates contrast ratio correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it calculates contrast ratio correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it calculates contrast ratio correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it generates complementary color palette" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it generates complementary color palette" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it generates complementary color palettePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it generates triadic color palette" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it generates triadic color palette" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it generates triadic color palettePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it generates analogous color palette" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it generates analogous color palette" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it generates analogous color palettePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it generates dark mode CSS" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it generates dark mode CSS" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it generates dark mode CSSPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it generates color utility classes" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it generates color utility classes" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it generates color utility classesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it inverts neutral colors for dark mode" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it inverts neutral colors for dark mode" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it inverts neutral colors for dark modePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it minifies CSS correctly" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it minifies CSS correctly" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it minifies CSS correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it handles AJAX palette generation" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it handles AJAX palette generation" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it handles AJAX palette generationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it handles AJAX contrast checking" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it handles AJAX contrast checking" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it handles AJAX contrast checkingPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it handles customizer registration" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it handles customizer registration" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it handles customizer registrationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it validates color palette structure" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it validates color palette structure" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it validates color palette structurePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`ColorSystem Module` → it provides proper contrast for all palette combinations" file="tests/Unit/Modules/ColorSystemTest.php::`ColorSystem Module` → it provides proper contrast for all palette combinations" class="Tests\Unit\Modules\ColorSystemTest" classname="Tests.Unit.Modules.ColorSystemTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`ColorSystem Module` → it provides proper contrast for all palette combinationsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Unit\Modules\CustomizerTest" file="tests/Unit/Modules/CustomizerTest.php" tests="25" assertions="0" errors="25" failures="0" skipped="0" time="0.000000">
+      <testcase name="`Customizer Module` → it can be instantiated" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it can be instantiated" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it can be instantiatedPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it returns correct module name" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it returns correct module name" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it returns correct module namePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers layout panel correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers layout panel correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers layout panel correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers styling panel correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers styling panel correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers styling panel correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers performance panel correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers performance panel correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers performance panel correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers advanced panel correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers advanced panel correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers advanced panel correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers general section with proper settings" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers general section with proper settings" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers general section with proper settingsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers header section with sticky header option" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers header section with sticky header option" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers header section with sticky header optionPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers footer section with widget columns" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers footer section with widget columns" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers footer section with widget columnsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers colors section with color controls" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers colors section with color controls" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers colors section with color controlsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers spacing section with scale controls" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers spacing section with scale controls" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers spacing section with scale controlsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it registers blog section with layout options" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it registers blog section with layout options" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it registers blog section with layout optionsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it handles full customizer registration" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it handles full customizer registration" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it handles full customizer registrationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it has proper active callbacks" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it has proper active callbacks" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it has proper active callbacksPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it checks excerpt enabled callback correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it checks excerpt enabled callback correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it checks excerpt enabled callback correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it sanitizes float values correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it sanitizes float values correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it sanitizes float values correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it handles AJAX customizer actions" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it handles AJAX customizer actions" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it handles AJAX customizer actionsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it handles unauthorized AJAX requests" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it handles unauthorized AJAX requests" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it handles unauthorized AJAX requestsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it resets section settings correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it resets section settings correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it resets section settings correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it exports theme settings correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it exports theme settings correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it exports theme settings correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it imports theme settings correctly" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it imports theme settings correctly" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it imports theme settings correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it handles invalid JSON in import" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it handles invalid JSON in import" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it handles invalid JSON in importPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it provides proper customizer control types" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it provides proper customizer control types" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it provides proper customizer control typesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it uses proper sanitization callbacks" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it uses proper sanitization callbacks" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it uses proper sanitization callbacksPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Customizer Module` → it uses postMessage transport for live preview" file="tests/Unit/Modules/CustomizerTest.php::`Customizer Module` → it uses postMessage transport for live preview" class="Tests\Unit\Modules\CustomizerTest" classname="Tests.Unit.Modules.CustomizerTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Customizer Module` → it uses postMessage transport for live previewPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Unit\Modules\PerformanceTest" file="tests/Unit/Modules/PerformanceTest.php" tests="19" assertions="0" errors="19" failures="0" skipped="0" time="0.000000">
+      <testcase name="`Performance Module` → it can be instantiated" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it can be instantiated" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it can be instantiatedPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it returns correct module name" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it returns correct module name" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it returns correct module namePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it generates critical CSS" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it generates critical CSS" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it generates critical CSSPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it generates homepage specific critical CSS" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it generates homepage specific critical CSS" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it generates homepage specific critical CSSPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it generates single page critical CSS" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it generates single page critical CSS" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it generates single page critical CSSPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it minifies CSS correctly" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it minifies CSS correctly" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it minifies CSS correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it optimizes script loading with async attribute" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it optimizes script loading with async attribute" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it optimizes script loading with async attributePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it optimizes script loading with defer attribute" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it optimizes script loading with defer attribute" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it optimizes script loading with defer attributePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it adds module attribute to theme scripts" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it adds module attribute to theme scripts" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it adds module attribute to theme scriptsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it optimizes style loading for non-critical stylesheets" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it optimizes style loading for non-critical stylesheets" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it optimizes style loading for non-critical stylesheetsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it adds loading lazy to images by default" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it adds loading lazy to images by default" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it adds loading lazy to images by defaultPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it adds eager loading for critical images" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it adds eager loading for critical images" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it adds eager loading for critical imagesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it lazy loads iframes correctly" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it lazy loads iframes correctly" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it lazy loads iframes correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it does not modify iframes that already have loading attribute" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it does not modify iframes that already have loading attribute" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it does not modify iframes that already have loading attributePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it adds preload metadata to videos" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it adds preload metadata to videos" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it adds preload metadata to videosPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it does not modify videos that already have preload attribute" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it does not modify videos that already have preload attribute" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it does not modify videos that already have preload attributePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it can run accessibility audit" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it can run accessibility audit" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it can run accessibility auditPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it handles customizer registration" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it handles customizer registration" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it handles customizer registrationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Performance Module` → it checks contrast ratio correctly" file="tests/Unit/Modules/PerformanceTest.php::`Performance Module` → it checks contrast ratio correctly" class="Tests\Unit\Modules\PerformanceTest" classname="Tests.Unit.Modules.PerformanceTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Performance Module` → it checks contrast ratio correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Unit\Modules\TypographyTest" file="tests/Unit/Modules/TypographyTest.php" tests="16" assertions="0" errors="16" failures="0" skipped="0" time="0.000000">
+      <testcase name="`Typography Module` → it can be instantiated" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it can be instantiated" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it can be instantiatedPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it returns correct module name" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it returns correct module name" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it returns correct module namePatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it loads typography presets correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it loads typography presets correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it loads typography presets correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it loads font combinations correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it loads font combinations correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it loads font combinations correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it gets current preset correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it gets current preset correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it gets current preset correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it builds Google Font URL correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it builds Google Font URL correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it builds Google Font URL correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it handles font families with spaces correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it handles font families with spaces correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it handles font families with spaces correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it generates typography CSS with custom properties" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it generates typography CSS with custom properties" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it generates typography CSS with custom propertiesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it generates fluid typography values" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it generates fluid typography values" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it generates fluid typography valuesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it generates editor typography CSS" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it generates editor typography CSS" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it generates editor typography CSSPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it minifies CSS correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it minifies CSS correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it minifies CSS correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it gets font recommendations" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it gets font recommendations" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it gets font recommendationsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it handles customizer registration" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it handles customizer registration" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it handles customizer registrationPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it sanitizes font scale correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it sanitizes font scale correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it sanitizes font scale correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it handles font variations correctly" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it handles font variations correctly" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it handles font variations correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`Typography Module` → it provides proper font weights for different presets" file="tests/Unit/Modules/TypographyTest.php::`Typography Module` → it provides proper font weights for different presets" class="Tests\Unit\Modules\TypographyTest" classname="Tests.Unit.Modules.TypographyTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`Typography Module` → it provides proper font weights for different presetsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\Unit\ThemeTest" file="tests/Unit/ThemeTest.php" tests="21" assertions="0" errors="21" failures="0" skipped="0" time="0.000000">
+      <testcase name="`OltreBlocksy_Theme` → it can be instantiated as singleton" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it can be instantiated as singleton" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it can be instantiated as singletonPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it initializes with proper hooks" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it initializes with proper hooks" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it initializes with proper hooksPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it sets up theme support correctly" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it sets up theme support correctly" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it sets up theme support correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it loads theme textdomain" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it loads theme textdomain" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it loads theme textdomainPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it registers widget areas" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it registers widget areas" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it registers widget areasPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it enqueues scripts and styles" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it enqueues scripts and styles" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it enqueues scripts and stylesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it enqueues editor scripts" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it enqueues editor scripts" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it enqueues editor scriptsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it preloads critical resources" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it preloads critical resources" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it preloads critical resourcesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it adds async attributes to scripts" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it adds async attributes to scripts" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it adds async attributes to scriptsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it adds preload for local fonts" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it adds preload for local fonts" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it adds preload for local fontsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it can get module instances" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it can get module instances" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it can get module instancesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it can get and set theme options" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it can get and set theme options" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it can get and set theme optionsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it registers module customizer settings" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it registers module customizer settings" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it registers module customizer settingsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it initializes with oltreblocksy_init function" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it initializes with oltreblocksy_init function" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it initializes with oltreblocksy_init functionPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it provides helper function oltreblocksy()" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it provides helper function oltreblocksy()" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it provides helper function oltreblocksy()Patchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it loads all core modules" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it loads all core modules" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it loads all core modulesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it handles module loading errors gracefully" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it handles module loading errors gracefully" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it handles module loading errors gracefullyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it loads theme dependencies correctly" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it loads theme dependencies correctly" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it loads theme dependencies correctlyPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it applies theme content width" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it applies theme content width" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it applies theme content widthPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it sets up proper image sizes" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it sets up proper image sizes" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it sets up proper image sizesPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+      <testcase name="`OltreBlocksy_Theme` → it conditionally loads jQuery based on settings" file="tests/Unit/ThemeTest.php::`OltreBlocksy_Theme` → it conditionally loads jQuery based on settings" class="Tests\Unit\ThemeTest" classname="Tests.Unit.ThemeTest" assertions="0" time="0.000000">
+        <error type="Patchwork\Exceptions\DefinedTooEarly">`OltreBlocksy_Theme` → it conditionally loads jQuery based on settingsPatchwork\Exceptions\DefinedTooEarly: The file that defines esc_attr() was included earlier than Patchwork. Please reverse this order to be able to redefine the function in question.
+at vendor/antecedent/patchwork/src/CallRerouting.php:167
+at vendor/antecedent/patchwork/src/CallRerouting.php:81
+at vendor/antecedent/patchwork/Patchwork.php:25
+at vendor/brain/monkey/src/Expectation/FunctionStub.php:70
+at tests/TestCase.php:47
+at tests/TestCase.php:28</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -67,6 +67,18 @@ Tags: block-themes, full-site-editing, responsive-layout, accessibility-ready, c
   }
 }
 
+/* No-JS fallback styles */
+.no-js .main-navigation {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.no-js .menu-toggle {
+  display: none !important;
+}
+
 /* Modern CSS Reset */
 *,
 *::before,
@@ -194,3 +206,13 @@ p {
     margin: 2cm;
   }
 }
+
+/* ==========================================================================
+   IMPORT MODULAR CSS
+   ========================================================================== */
+
+/* Import layout system */
+@import url('assets/css/modules/layout.css');
+
+/* Import UI components */
+@import url('assets/css/modules/components.css');

@@ -10,6 +10,10 @@
 (function() {
     'use strict';
 
+    // Replace no-js class with js immediately
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+
     // Feature detection
     const supports = {
         intersectionObserver: 'IntersectionObserver' in window,
@@ -411,7 +415,7 @@
         },
 
         monitorPerformance() {
-            if (!window.performance) return;
+            if (!window.performance || !performance.getEntriesByType) return;
 
             window.addEventListener('load', () => {
                 setTimeout(() => {

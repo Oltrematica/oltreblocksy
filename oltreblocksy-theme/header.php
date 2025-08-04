@@ -18,16 +18,16 @@ defined('ABSPATH') || exit;
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('no-js'); ?>>
 <?php wp_body_open(); ?>
 
 <a class="skip-link screen-reader-text" href="#primary">
     <?php esc_html_e('Skip to main content', 'oltreblocksy'); ?>
 </a>
 
-<div id="page" class="site">
-    <header id="masthead" class="site-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
-        <div class="container">
+<div id="page" class="site layout-<?php echo esc_attr(get_theme_mod('oltreblocksy_site_layout', 'full-width')); ?>">
+    <header id="masthead" class="site-header header-<?php echo esc_attr(get_theme_mod('oltreblocksy_header_layout', 'default')); ?><?php echo get_theme_mod('oltreblocksy_sticky_header', true) ? ' sticky-header' : ''; ?>" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+        <div class="header-container container">
             <div class="site-branding">
                 <?php
                 if (has_custom_logo()) {
@@ -52,10 +52,10 @@ defined('ABSPATH') || exit;
 
             <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e('Primary menu', 'oltreblocksy'); ?>" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'oltreblocksy'); ?>">
-                    <span class="menu-toggle-icon">
-                        <?php echo oltreblocksy_get_svg_icon('menu', 24); ?>
-                    </span>
-                    <span class="menu-toggle-text screen-reader-text"><?php esc_html_e('Menu', 'oltreblocksy'); ?></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="menu-toggle-text sr-only"><?php esc_html_e('Menu', 'oltreblocksy'); ?></span>
                 </button>
 
                 <?php
