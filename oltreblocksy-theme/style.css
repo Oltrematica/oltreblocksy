@@ -1,0 +1,196 @@
+/*
+Theme Name: OltreBlocksy
+Description: Un tema WordPress altamente modulare e configurabile che supera Blocksy in termini di opzioni, bellezza, pulizia, modularità e performance. Architettura completamente modulare con sistema tipografico rivoluzionario, layout CSS Grid nativo, e ottimizzazioni performance avanzate.
+Version: 1.0.0
+Author: OltreBlocksy Team
+Author URI: https://oltreblocksy.com
+Text Domain: oltreblocksy
+Domain Path: /languages/
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 8.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: block-themes, full-site-editing, responsive-layout, accessibility-ready, custom-colors, custom-logo, custom-menu, editor-style, featured-images, flexible-header, threaded-comments, translation-ready, wide-blocks
+*/
+
+/* Reset e Base Styles con CSS Custom Properties */
+:root {
+  /* Design Tokens - Spacing System */
+  --spacing-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+  --spacing-sm: clamp(0.5rem, 1vw, 1rem);
+  --spacing-md: clamp(1rem, 2vw, 2rem);
+  --spacing-lg: clamp(1.5rem, 3vw, 3rem);
+  --spacing-xl: clamp(2rem, 4vw, 4rem);
+  --spacing-xxl: clamp(3rem, 6vw, 6rem);
+
+  /* Typography Scale - Fluid Typography */
+  --font-size-xs: clamp(0.75rem, 0.95vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 1.1vw, 1rem);
+  --font-size-base: clamp(1rem, 1.25vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1.4vw, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 1.75vw, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 2.25vw, 2rem);
+  --font-size-3xl: clamp(2rem, 3vw, 2.5rem);
+  --font-size-4xl: clamp(2.5rem, 4vw, 3rem);
+
+  /* Color System */
+  --color-primary-50: hsl(210, 40%, 98%);
+  --color-primary-100: hsl(210, 40%, 96%);
+  --color-primary-500: hsl(210, 40%, 50%);
+  --color-primary-900: hsl(210, 40%, 10%);
+  
+  /* Semantic Colors */
+  --color-text: var(--color-primary-900);
+  --color-text-muted: hsl(210, 10%, 40%);
+  --color-background: var(--color-primary-50);
+  --color-surface: white;
+  
+  /* Layout Properties */
+  --container-max-width: min(100% - 2rem, 1200px);
+  --content-max-width: min(100% - 2rem, 65ch);
+  --header-height: 4rem;
+  
+  /* Animation */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: var(--color-primary-50);
+    --color-text-muted: hsl(210, 10%, 70%);
+    --color-background: var(--color-primary-900);
+    --color-surface: hsl(210, 40%, 15%);
+  }
+}
+
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 { font-size: var(--font-size-4xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-2xl); }
+h4 { font-size: var(--font-size-xl); }
+h5 { font-size: var(--font-size-lg); }
+h6 { font-size: var(--font-size-base); }
+
+p {
+  margin-bottom: var(--spacing-sm);
+  max-width: var(--content-max-width);
+}
+
+/* Layout Utilities */
+.container {
+  width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--spacing-sm);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.flex {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-primary-500);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Loading Animation */
+.loading {
+  opacity: 0;
+  animation: fadeIn var(--transition-base) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Print Styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a, a:visited {
+    text-decoration: underline;
+  }
+  
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  
+  @page {
+    margin: 2cm;
+  }
+}
